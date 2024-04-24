@@ -1,2 +1,2 @@
-# Proyecto-NIKE-PAGE.
-Recreación de la página de NIKE.
+# Proyecto-NIKE-PAGE
+Recreación de la página de NIKE
