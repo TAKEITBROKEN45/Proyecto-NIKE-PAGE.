@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<title>NIKE PROYECTO</title>
+</head>
+
+<body bgcolor="#f4f4f4" text="black" face="Calibri">
+<p><center>Novedades y destacados / Hombre / Mujer Niño/a / Ofertas</center></p>
+<p><center><h3><font color="black" face="Calibri">
+    Ya están aquí los Member Days</font></h3></p>
+  <p> Descubre el lanzamiento exclusivo de hoy en la Member Shop, Compra con Nike. </center></p>
+   <center><img src="just.jpg" height="200"></center>
+    <center><img src="Camavinga.jpg" height="600"></center>
+    <style>
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        margin: 0 auto;
+      }
+      .carousel img {
+        width: 100%;
+        display: block;
+      }
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        color:white
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        cursor: pointer;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="blue.jpg" alt="blue">
+      <img src="gray.jpg" alt="gray">
+      <img src="red.jpg" alt="red">
+      <button class="prev" onclick="moveSlide(-1)">Anterior</button>
+      <button class="next" onclick="moveSlide(1)">Siguiente</button>
+    </div>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.carousel img');
+      function moveSlide(n) {
+        currentSlide += n;
+        if (currentSlide >= slides.length) {
+          currentSlide = 0;
+        } else if (currentSlide < 0) {
+          currentSlide = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        slides[currentSlide].style.display = 'block';
+      }
+    </script>
+<p><center><h1><font color="GRAY" face="Calibri">COMPRAR</font></h1></p> 
+</body>
+<footer><P><font color="black" face="calibri">JORGE SAID CASTILLO HERNÁNDEZ</P>
+<P>20231031503</P>
+<p>UNIVERSIDAD NACIONAL AUTÓNOMA DE HONDURAS</p>
+<p>Ing. Arturo Donaire</p></center></font>
+</footer>
+</html>
